@@ -1,0 +1,19 @@
+
+%container-width{
+    width:100%;
+    height:200px;
+}
+
+
+div{
+    @extend %container-width
+}
+
+#header{
+background-color: red;
+}
+
+#search{
+background-color: green;
+color:white;
+}
