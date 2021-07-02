@@ -5,19 +5,36 @@
 <title>Google</title>
 <link rel="stylesheet" href="styles.css">
 
+
 </head>
 <body>
 
-<div id="header"> Header</div>
-<div> Image Location</div>
-<div id="search"> Search Bar 
-    <form action="https://google.com/search">
-        <input type="text" name="q">
-        <input type="submit" value="Google Search">
-    </form>
+<div id="header"> Header<button>Google Advance Search</button><button>Google Image Search</button></div>
+<div id="image-body"><div id="image-body-container"><img src="src/Google-logo.png" width="270px" height="90px"></div></div>
+<div id="search-body">
+    <div id="search-container"> 
+        <div id="search-image">
+            <img src="src/search-icon.png" width="26px" height="16px;">
+        </div>
+        <form action="https://google.com/search">
+            
+            <input type="text" name="q" id="search-bar" oninput="ShowClear()">
+            
+        </form>
+        <div id="search-buttons">
+            <div id="search-buttons-erase">
+               <button id="search-button-clear" onclick="ClearSearchbar()">X</button>
+            </div>
+            <div id="search-buttons-voice">
+                
+            </div>
+        </div>
+    </div>
 </div>
-<div> Contact</div>
-<div> Footer</div>
+<div id="contact"> Contact</div>
+<div id="footer"> Footer</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>

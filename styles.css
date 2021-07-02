@@ -1,4 +1,4 @@
-div {
+#header, #image-body, #search-body, #contact, #footer {
   width: 100%;
   height: 200px;
 }
@@ -7,8 +7,71 @@ div {
   background-color: red;
 }
 
-#search {
+#image-body-container {
+  width: 260px;
+  height: 90px;
   background-color: green;
-  color: white;
+  margin-left: 44%;
+  padding-top: 100px;
+}
+
+#search-body {
+  background-color: red;
+}
+
+#search-container {
+  background-color: blue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border: 2px solid #adadad;
+  border-radius: 25px;
+  width: 550px;
+  height: 38px;
+  margin-left: 37%;
+  padding: 4px;
+}
+
+#search-container form {
+  padding-left: 4px;
+  padding-top: 8px;
+}
+
+#search-container button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+#search-button-clear {
+  display: none;
+}
+
+#search-bar {
+  width: 385px;
+  font-size: 16px;
+  color: black;
+  font-family: Arial;
+  outline: none;
+  border: none;
+  margin-left: 20px;
+}
+
+#search-buttons {
+  margin-left: 15px;
+  margin-top: 8px;
+}
+
+#search-buttons-erase button:hover {
+  color: red;
+}
+
+#search-image {
+  padding-top: 9px;
+  margin-left: 13px;
 }
 /*# sourceMappingURL=styles.css.map */
